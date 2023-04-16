@@ -1,0 +1,31 @@
+{
+  "name": "juno.public.dappnode.eth",
+  "version": "0.1.0",
+  "shortDescription": "StarkNet full node",
+  "description": "Nethermind Starknet Node Client Juno",
+  "type": "service",
+  "author": "0xVato",
+  "categories": [
+    "Developer tools"
+  ],
+  "keywords": [
+    "starknet",
+    "starkware",
+    "nethermind"
+  ],
+  "architectures": [
+    "linux/amd64"
+  ],
+  "links": {
+    "homepage": "https://github.com/ArturVargas/",
+    "api": "http://juno.public.dappnode:6060/"
+  },
+  "license": "GPL-3.0",
+  "exposable": [
+    {
+      "name": "StarkNet RPC",
+      "description": "JSON RPC endpoint for StarkNet",
+      "port": 6060
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  dappnode_juno.public.dappnode.eth:
+    build:
+      context: build
+      args:
+        UPSTREAM_VERSION: v0.2.0
+    image: "dappnode_juno.public.dappnode.eth:0.1.0"
+    ports:
+      - "6060:6060"
+    environment:
+      RUST_LOG: info
+      JUNO_ETHEREUM_API_URL: "http://geth.dappnode:8545"
+      JUNO_HTTP_RPC_ADDRESS: "0.0.0.0:6060"
+    volumes:
+      - "juno_data:/usr/share/juno/data"
+    restart: unless-stopped
+volumes:
+  juno_data: {}
