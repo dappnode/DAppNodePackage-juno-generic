@@ -1,4 +1,4 @@
-version: "1"
+version: "2"
 fields:
   - id: JUNO_ETHEREUM_API_URL
     target:
@@ -6,8 +6,20 @@ fields:
       name: JUNO_ETHEREUM_API_URL
     title: Ethereum node
     description: >-
-      HTTP(s) URL pointing to your Ethereum L1 node's endpoint.
+      Juno is a golang Starknet node implementation by Nethermind with the aim of decentralising Starknet.
 
-      For example:
-        a) http://geth.dappnode:8545
-        b) https://goerli.infura.io/v3/<project_id>
+      Starknet state construction and storage using a path-based Merkle Patricia trie.
+      Pedersen and starknet_keccak hash implementation over starknet field.
+      Feeder gateway synchronisation of Blocks, Transactions, Receipts, State Updates and Classes.
+      Block and Transaction hash verification.
+      JSON-RPC Endpoints:
+       * starknet_chainId
+       * starknet_blockNumber
+       * starknet_blockHashAndNumber
+       * starknet_getBlockWithTxHashes
+       * starknet_getBlockWithTxs
+       * starknet_getTransactionByHash
+       * starknet_getTransactionReceipt
+       * starknet_getBlockTransactionCount
+       * starknet_getTransactionByBlockIdAndIndex
+       *starknet_getStateUpdate
