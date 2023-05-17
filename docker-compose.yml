@@ -4,16 +4,15 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v0.2.1
+        UPSTREAM_VERSION: v0.2.2
     image: "dappnode_juno.public.dappnode.eth.juno.public.dappnode.eth:0.1.0"
     ports:
       - "6060:6060"
     environment:
       RUST_LOG: info
-      JUNO_ETHEREUM_API_URL: "http://geth.dappnode:8545"
       JUNO_HTTP_RPC_ADDRESS: "0.0.0.0:6060"
     volumes:
-      - "juno_data:/usr/share/juno/data"
+      - "juno_data:/root/.local/share/juno/mainnet"
     restart: unless-stopped
 volumes:
   juno_data: {}

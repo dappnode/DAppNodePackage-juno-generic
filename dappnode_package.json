@@ -4,6 +4,7 @@
   "shortDescription": "StarkNet full node",
   "description": "Nethermind Starknet Node Client Juno",
   "type": "service",
+  "chain": "ethereum",
   "author": "0xVato",
   "categories": [
     "Developer tools"
@@ -17,8 +18,12 @@
     "linux/amd64"
   ],
   "links": {
-    "homepage": "https://github.com/ArturVargas/",
+    "homepage": "https://github.com/ArturVargas/juno-dappnode#readme",
     "api": "http://juno.public.dappnode:6060/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArturVargas/juno-dappnode"
   },
   "license": "GPL-3.0",
   "exposable": [
