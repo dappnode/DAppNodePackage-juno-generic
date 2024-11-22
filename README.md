@@ -4,22 +4,14 @@
 
 Wrapper around Nethermind Juno to run a Starknet full node giving you a safe view into StarkNet network, helping to keep the network secure and the data accurate.
 
-Juno is a golang Starknet node implementation by Nethermind with the aim of decentralising Starknet.
+Juno is a Go implementation of a Starknet full-node client created by Nethermind to allow node operators to easily and reliably support the network and advance its decentralisation goals. See the [Juno website](https://juno.nethermind.io/)
 
-## ✔ Supported Features
 
-- Starknet state construction and storage using a path-based Merkle Patricia trie. 
-- Pedersen and `starknet_keccak` hash implementation over starknet field.
-- Feeder gateway synchronisation of Blocks, Transactions, Receipts, State Updates and Classes.
-- Block and Transaction hash verification.
-- JSON-RPC Endpoints:
-  - `starknet_chainId`
-  - `starknet_blockNumber`
-  - `starknet_blockHashAndNumber`
-  - `starknet_getBlockWithTxHashes`
-  - `starknet_getBlockWithTxs`
-  - `starknet_getTransactionByHash`
-  - `starknet_getTransactionReceipt`
-  - `starknet_getBlockTransactionCount`
-  - `starknet_getTransactionByBlockIdAndIndex`
-  - `starknet_getStateUpdate`
+## DappNode configuration
+
+`ETH_L1_RPC_URL`: To enable L1 verification, provide the Websocket endpoint of a running Ethereum node. Leave empty to skip verification. See `eth-node` parameter in [Configuration options](https://juno.nethermind.io/configuring#configuration-options)
+
+`SNAPSHOT_URL`: To speed up first sync, set a snapshot URL. Default is the latest mainnet snapshot from Nethermind. Leave empty to sync from scratch. See [Snapshots](https://juno.nethermind.io/snapshots). 
+> Note: a failed snapshot download may leave files in the snapshot directory and will skip downloading at the next restart. To force a snapshot download, delete the package and reinstall. 
+
+`EXTRA_OPTS`: Additional configuration options. See [Configuration options](https://juno.nethermind.io/configuring#configuration-options)

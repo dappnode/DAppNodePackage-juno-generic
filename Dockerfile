@@ -1,6 +1,10 @@
 ARG UPSTREAM_VERSION
-FROM nethermindeth/juno:${UPSTREAM_VERSION}
+FROM nethermind/juno:${UPSTREAM_VERSION}
 
-RUN mkdir -p home/juno
+RUN apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/* \
+  && mkdir -p /var/lib/juno
 
-ENTRYPOINT juno
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["bash", "-c", "./entrypoint.sh"]
