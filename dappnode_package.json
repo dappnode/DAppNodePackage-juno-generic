@@ -1,11 +1,14 @@
 {
   "name": "juno.public.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "shortDescription": "StarkNet full node",
   "description": "Nethermind Starknet Node Client Juno",
   "type": "service",
-  "chain": "ethereum",
-  "author": "0xVato",
+  "author": "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
+  "contributors": [
+    "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
+    "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
+  ],
   "categories": [
     "Developer tools"
   ],
