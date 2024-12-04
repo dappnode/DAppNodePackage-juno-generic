@@ -1,6 +1,6 @@
 {
   "name": "juno.public.dappnode.eth",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "shortDescription": "StarkNet full node",
   "description": "Nethermind Starknet Node Client Juno",
   "type": "service",
@@ -9,17 +9,9 @@
     "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
     "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
   ],
-  "categories": [
-    "Developer tools"
-  ],
-  "keywords": [
-    "starknet",
-    "starkware",
-    "nethermind"
-  ],
-  "architectures": [
-    "linux/amd64"
-  ],
+  "categories": ["Developer tools"],
+  "keywords": ["starknet", "starkware", "nethermind"],
+  "architectures": ["linux/amd64"],
   "links": {
     "homepage": "https://github.com/ArturVargas/juno-dappnode#readme",
     "api": "http://juno.public.dappnode:6060/"

@@ -5,17 +5,17 @@ services:
       context: .
       args:
         UPSTREAM_VERSION: v0.12.4
-    image: "dappnode_juno.public.dappnode.eth.juno.public.dappnode.eth:0.1.1"
+    image: dappnode_juno.public.dappnode.eth.juno.public.dappnode.eth:1.0.0
     security_opt:
       - seccomp:unconfined
     ports:
       - "6060:6060"
     environment:
-      ETH_L1_RPC_URL: "ws://nethermind.public.dappnode:8545"
-      SNAPSHOT_URL: "https://juno-snapshots.nethermind.dev/files/mainnet/latest"
+      ETH_L1_RPC_URL: ws://nethermind.public.dappnode:8545
+      SNAPSHOT_URL: https://juno-snapshots.nethermind.dev/files/mainnet/latest
       EXTRA_OPTS: ""
     volumes:
-      - "juno_data:/var/lib/juno"
+      - juno_data:/var/lib/juno
     restart: unless-stopped
 volumes:
   juno_data: {}
