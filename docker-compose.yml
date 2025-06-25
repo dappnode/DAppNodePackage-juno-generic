@@ -1,10 +1,11 @@
+version: "3.8"
 services:
   juno:
     build:
       context: .
       args:
         UPSTREAM_VERSION: v0.14.0
-    image: juno.public.dappnode.eth:1.0.0
+    image: juno.public.dappnode.eth:2.0.0
     security_opt:
       - seccomp:unconfined
     ports:
@@ -18,5 +19,8 @@ services:
       WS_PORT: "6061"
       WS_HOST: "0.0.0.0"
     volumes:
-      - ~/juno:/var/lib/juno
+      - juno_data:/var/lib/juno
     restart: unless-stopped
+
+volumes:
+  juno_data: {}

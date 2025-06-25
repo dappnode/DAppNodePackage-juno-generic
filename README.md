@@ -8,7 +8,7 @@ Juno is a Go implementation of a Starknet full-node client created by Nethermind
 
 ## Quick Start
 
-The package automatically creates the required data directory (`~/juno`) and downloads the latest snapshot on first run. No manual setup required!
+The package automatically creates the required data directory and downloads the latest snapshot on first run. No manual setup required!
 
 ```bash
 docker-compose up -d
@@ -89,13 +89,13 @@ environment:
   SNAPSHOT_URL: ""
 ```
 
-## Data Directory
+## Data Persistence
 
-The package automatically creates and manages the data directory at `~/juno` (your home directory). This directory contains:
+The package uses Docker named volumes for data persistence:
 
-- Blockchain data
-- Downloaded snapshots
-- Node configuration
+- **Volume name**: `juno_data`
+- **Data location**: `/var/lib/juno` (inside container)
+- **Persistence**: Data persists across container restarts and updates
 
 ## WebSocket Interface
 
