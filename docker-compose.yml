@@ -1,21 +1,22 @@
-version: "3.5"
 services:
-  dappnode_juno.public.dappnode.eth:
+  juno:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v0.12.4
-    image: dappnode_juno.public.dappnode.eth.juno.public.dappnode.eth:1.0.0
+        UPSTREAM_VERSION: v0.14.0
+    image: juno.public.dappnode.eth:1.0.0
     security_opt:
       - seccomp:unconfined
     ports:
       - "6060:6060"
+      - "6061:6061"
     environment:
       ETH_L1_RPC_URL: ws://nethermind.public.dappnode:8545
-      SNAPSHOT_URL: https://juno-snapshots.nethermind.dev/files/mainnet/latest
+      NETWORK: "mainnet"
       EXTRA_OPTS: ""
+      ENABLE_WS: "true"
+      WS_PORT: "6061"
+      WS_HOST: "0.0.0.0"
     volumes:
-      - juno_data:/var/lib/juno
+      - ~/juno:/var/lib/juno
     restart: unless-stopped
-volumes:
-  juno_data: {}

@@ -14,7 +14,8 @@
   "architectures": ["linux/amd64"],
   "links": {
     "homepage": "https://github.com/ArturVargas/juno-dappnode#readme",
-    "api": "http://juno.public.dappnode:6060/"
+    "api": "http://juno.public.dappnode:6060/",
+    "websocket": "ws://juno.public.dappnode:6061/"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,11 @@
       "name": "StarkNet RPC",
       "description": "JSON RPC endpoint for StarkNet",
       "port": 6060
+    },
+    {
+      "name": "StarkNet WebSocket",
+      "description": "WebSocket RPC endpoint for StarkNet",
+      "port": 6061
     }
   ]
 }
