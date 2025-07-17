@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v0.14.0
+        UPSTREAM_VERSION: v0.15.0-rc.4
     image: juno.public.dappnode.eth:2.0.0
     security_opt:
       - seccomp:unconfined
@@ -12,7 +12,7 @@ services:
       - "6060:6060"
       - "6061:6061"
     environment:
-      ETH_L1_RPC_URL: http://execution.${NETWORK}.staker.dappnode:8545
+      ETH_L1_RPC_URL: http://execution.mainnet.staker.dappnode:8545
       NETWORK: "mainnet"
       EXTRA_OPTS: ""
       ENABLE_WS: "true"
