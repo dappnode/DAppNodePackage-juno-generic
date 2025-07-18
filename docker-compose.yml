@@ -14,10 +14,11 @@ services:
     environment:
       ETH_L1_RPC_URL: http://execution.mainnet.staker.dappnode:8545
       SNAPSHOT_URL: https://juno-snapshots.nethermind.io/files/mainnet/latest
+      NETWORK: mainnet
+      ENABLE_WS: true
+      WS_PORT: 6061
+      WS_HOST: 0.0.0.0
       EXTRA_OPTS: ""
-      ENABLE_WS: "true"
-      WS_PORT: "6061"
-      WS_HOST: "0.0.0.0"
     volumes:
       - juno_data:/var/lib/juno
     restart: unless-stopped
