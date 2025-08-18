@@ -1,0 +1,11 @@
+[
+    {
+        "labels": {
+            "package": "juno-sepolia.public.dappnode.eth",
+            "service": "juno"
+        },
+        "targets": [
+            "juno-sepolia.public.dappnode:9090"
+        ]
+    }
+]

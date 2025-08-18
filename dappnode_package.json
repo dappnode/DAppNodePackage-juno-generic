@@ -9,9 +9,20 @@
     "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
     "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
   ],
-  "categories": ["Developer tools"],
-  "keywords": ["starknet", "starkware", "nethermind"],
-  "architectures": ["linux/amd64", "linux/arm64"],
+  "categories": [
+    "Developer tools"
+  ],
+  "keywords": [
+    "starknet",
+    "starkware",
+    "nethermind"
+  ],
+  "architectures": [
+    "linux/amd64"
+  ],
+  "upstreamArg": "UPSTREAM_VERSION",
+  "upstreamVersion": "v0.15.1",
+  "upstreamRepo": "NethermindEth/juno",
   "links": {
     "homepage": "https://github.com/ArturVargas/juno-dappnode#readme",
     "api": "http://juno.public.dappnode:6060/",

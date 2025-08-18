@@ -1,0 +1,10 @@
+version: "2"
+fields:
+  - id: eth_rpc
+    target:
+      type: environment
+      name: ETH_L1_RPC_URL
+      service: juno
+    title: Ethereum L1 RPC URL
+    description: >
+      Provide the L1 Ethereum node RPC URL. Leave blank to skip L1 verification.

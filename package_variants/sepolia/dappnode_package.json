@@ -1,0 +1,17 @@
+{
+  "name": "juno-sepolia.public.dappnode.eth",
+  "version": "2.0.2",
+  "shortDescription": "StarkNet full node in Sepolia",
+  "exposable": [
+    {
+      "name": "StarkNet RPC",
+      "description": "JSON RPC endpoint for StarkNet",
+      "port": 6070
+    },
+    {
+      "name": "StarkNet WebSocket",
+      "description": "WebSocket RPC endpoint for StarkNet",
+      "port": 6071
+    }
+  ]
+}
