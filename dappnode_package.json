@@ -24,13 +24,13 @@
   "upstreamVersion": "v0.15.1",
   "upstreamRepo": "NethermindEth/juno",
   "links": {
-    "homepage": "https://github.com/ArturVargas/juno-dappnode#readme",
+    "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
     "api": "http://juno.public.dappnode:6060/",
     "websocket": "ws://juno.public.dappnode:6061/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArturVargas/juno-dappnode"
+    "url": "https://github.com/dappnode/DAppNodePackage-juno-generic"
   },
   "license": "GPL-3.0",
   "exposable": [
