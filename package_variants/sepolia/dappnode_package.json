@@ -1,6 +1,6 @@
 {
   "name": "juno-sepolia.public.dappnode.eth",
-  "version": "2.0.2",
+  "version": "0.1.0",
   "shortDescription": "StarkNet full node in Sepolia",
   "exposable": [
     {
