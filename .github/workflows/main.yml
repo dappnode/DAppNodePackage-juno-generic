@@ -17,7 +17,7 @@ jobs:
     if: github.event_name != 'push'
     steps:
       - uses: actions/checkout@v4
-      - run: npx @dappnode/dappnodesdk build --skip_save --variant mainnet
+      - run: npx @dappnode/dappnodesdk build --skip_save --variant sepolia
 
   release:
     name: Release
