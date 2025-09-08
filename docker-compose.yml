@@ -4,18 +4,17 @@ services:
     build:
       context: juno
       args:
-        UPSTREAM_VERSION: v0.15.1
+        UPSTREAM_VERSION: v0.15.4
     image: juno.public.dappnode.eth:2.0.2
     security_opt:
       - seccomp:unconfined
     environment:
-      ETH_L1_RPC_URL:
+      ETH_L1_RPC_URL: null
       ENABLE_WS: true
       WS_HOST: 0.0.0.0
       EXTRA_OPTS: ""
     volumes:
       - juno_data:/var/lib/juno
     restart: unless-stopped
-
 volumes:
   juno_data: {}
