@@ -10,12 +10,12 @@
   "exposable": [
     {
       "name": "StarkNet RPC",
-      "description": "JSON RPC endpoint for StarkNet",
+      "description": "JSON RPC endpoint for StarkNet Sepolia",
       "port": 6070
     },
     {
       "name": "StarkNet WebSocket",
-      "description": "WebSocket RPC endpoint for StarkNet",
+      "description": "WebSocket RPC endpoint for StarkNet Sepolia",
       "port": 6071
     }
   ]

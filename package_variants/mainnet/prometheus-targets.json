@@ -1,0 +1,11 @@
+[
+    {
+        "labels": {
+            "package": "juno.dnp.dappnode.eth",
+            "service": "juno"
+        },
+        "targets": [
+            "juno.dappnode:9090"
+        ]
+    }
+]
