@@ -4,8 +4,9 @@
   "shortDescription": "StarkNet full node",
   "description": "Nethermind Starknet Node Client Juno",
   "type": "service",
-  "author": "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
+    "hcastc00 <hector@dappnode.io> (https://github.com/hcastc00)",
     "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
     "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
   ],
@@ -18,7 +19,8 @@
     "nethermind"
   ],
   "architectures": [
-    "linux/amd64"
+    "linux/amd64",
+    "linux/arm64"
   ],
   "upstreamArg": "UPSTREAM_VERSION",
   "upstreamVersion": "v0.15.1",
