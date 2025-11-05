@@ -1,5 +1,5 @@
 {
-  "name": "juno.public.dappnode.eth",
+  "name": "juno.dnp.dappnode.eth",
   "version": "2.0.2",
   "shortDescription": "StarkNet full node",
   "description": "Nethermind Starknet Node Client Juno",
@@ -27,8 +27,8 @@
   "upstreamRepo": "NethermindEth/juno",
   "links": {
     "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
-    "api": "http://juno.public.dappnode:6060/",
-    "websocket": "ws://juno.public.dappnode:6061/"
+    "api": "http://juno.dappnode:6060/",
+    "websocket": "ws://juno.dappnode:6061/"
   },
   "repository": {
     "type": "git",
