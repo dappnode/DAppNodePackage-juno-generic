@@ -1,8 +1,8 @@
 {
   "name": "juno.dnp.dappnode.eth",
-  "version": "2.0.2",
+  "version": "0.1.0",
   "shortDescription": "StarkNet full node",
-    "links": {
+  "links": {
     "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
     "api": "http://juno.dappnode:6070/",
     "websocket": "ws://juno.dappnode:6071/"
