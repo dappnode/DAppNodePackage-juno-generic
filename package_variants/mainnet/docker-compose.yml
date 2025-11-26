@@ -1,7 +1,6 @@
 version: "3.8"
 services:
   juno:
-    build:
     image: juno.dnp.dappnode.eth:2.0.2
     ports:
       - "6060:6060"
