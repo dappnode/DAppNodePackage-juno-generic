@@ -2,9 +2,6 @@ version: "3.8"
 services:
   juno:
     build:
-      context: juno
-      args:
-        UPSTREAM_VERSION: v0.15.1
     image: juno.dnp.dappnode.eth:2.0.2
     ports:
       - "6060:6060"
