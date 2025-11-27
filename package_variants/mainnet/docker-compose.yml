@@ -1,7 +1,22 @@
 version: "3.8"
 services:
   juno:
+    ports:
+      - "6060:6060"
+      - "6061:6061"
     environment:
       ETH_L1_RPC_URL: ws://execution.mainnet.dncore.dappnode:8546
       SNAPSHOT_URL: https://juno-snapshots.nethermind.io/files/mainnet/latest
       NETWORK: mainnet
+      HTTP_PORT: 6060
+      WS_PORT: 6061
+  staking:
+    image: nethermind/starknet-staking-v2:v0.2.9
+    command:
+      ["--metrics", "--metrics-host", "0.0.0.0", "--metrics-port", "9090"]
+    environment:
+      PROVIDER_HTTP_URL: http://juno:6060/rpc/v0_8
+      PROVIDER_WS_URL: ws://juno:6061/ws/v0_8
+      SIGNER_OPERATIONAL_ADDRESS: ""
+      SIGNER_PRIVATE_KEY: ""
+      SIGNER_EXTERNAL_URL: ""
