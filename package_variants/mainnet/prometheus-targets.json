@@ -5,7 +5,16 @@
             "service": "juno"
         },
         "targets": [
-            "juno.dappnode:9090"
+            "juno.juno.dappnode:9090"
+        ]
+    },
+    {
+        "labels": {
+            "package": "juno.dnp.dappnode.eth",
+            "service": "staking"
+        },
+        "targets": [
+            "staking.juno.dappnode:9090"
         ]
     }
 ]
