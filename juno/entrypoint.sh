@@ -44,12 +44,12 @@ if [ "$ENABLE_WS" = "true" ]; then
 fi
 
 juno \
-  --network ${NETWORK:-sepolia} \
+  --network $NETWORK \
   --http \
   --http-port ${HTTP_PORT:-6060} \
   --http-host 0.0.0.0 \
   --db-path $JUNO_DIR \
-    --metrics \
+  --metrics \
   --metrics-port 9090 \
   --metrics-host 0.0.0.0 \
   $ethnode $wsopts $EXTRA_OPTS

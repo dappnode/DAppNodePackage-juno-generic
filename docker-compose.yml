@@ -12,6 +12,8 @@ services:
       ENABLE_WS: true
       WS_HOST: 0.0.0.0
       EXTRA_OPTS: ""
+      HTTP_PORT: 6060
+      WS_PORT: 6061
     volumes:
       - juno_data:/var/lib/juno
     restart: unless-stopped
