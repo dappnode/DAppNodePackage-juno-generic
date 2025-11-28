@@ -1,11 +1,11 @@
 version: "3.8"
 services:
   juno:
-    image: juno.dnp.dappnode.eth:2.0.2
     ports:
       - "6070:6070"
       - "6071:6071"
     environment:
+      ETH_L1_RPC_URL: ws://execution.sepolia.dncore.dappnode:8546
       SNAPSHOT_URL: https://juno-snapshots.nethermind.io/files/sepolia/latest
       NETWORK: sepolia
       HTTP_PORT: 6070

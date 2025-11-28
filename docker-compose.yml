@@ -5,7 +5,6 @@ services:
       context: juno
       args:
         UPSTREAM_VERSION: v0.15.12
-    image: juno.dnp.dappnode.eth:2.0.2
     security_opt:
       - seccomp:unconfined
     environment:
