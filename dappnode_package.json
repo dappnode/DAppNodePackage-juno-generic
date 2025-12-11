@@ -14,7 +14,7 @@
   "keywords": ["starknet", "starkware", "nethermind"],
   "architectures": ["linux/amd64", "linux/arm64"],
   "upstreamArg": "UPSTREAM_VERSION",
-  "upstreamVersion": "v0.15.13",
+  "upstreamVersion": "v0.15.16",
   "upstreamRepo": "NethermindEth/juno",
   "links": {
     "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
