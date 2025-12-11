@@ -4,7 +4,7 @@ services:
     build:
       context: juno
       args:
-        UPSTREAM_VERSION: v0.15.13
+        UPSTREAM_VERSION: v0.15.16
     security_opt:
       - seccomp:unconfined
     environment:
