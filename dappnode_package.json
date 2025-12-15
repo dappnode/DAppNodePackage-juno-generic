@@ -10,7 +10,7 @@
     "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
     "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
   ],
-  "categories": ["Developer tools"],
+  "categories": ["Developer tools", "Blockchain"],
   "keywords": ["starknet", "starkware", "nethermind"],
   "architectures": ["linux/amd64", "linux/arm64"],
   "upstreamArg": "UPSTREAM_VERSION",
