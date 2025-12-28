@@ -11,12 +11,12 @@ services:
       HTTP_PORT: 6070
       WS_PORT: 6071
   staking:
-    image: nethermind/starknet-staking-v2:v0.2.9
+    image: nethermind/starknet-staking-v2:v0.3.0
     command:
       ["--metrics", "--metrics-host", "0.0.0.0", "--metrics-port", "9090"]
     environment:
-      PROVIDER_HTTP_URL: http://juno-sepolia:6070/rpc/v0_8
-      PROVIDER_WS_URL: ws://juno-sepolia:6071/ws/v0_8
+      PROVIDER_HTTP_URL: http://juno-sepolia:6070/rpc/v0_9
+      PROVIDER_WS_URL: ws://juno-sepolia:6071/ws/v0_9
       SIGNER_OPERATIONAL_ADDRESS: ""
       SIGNER_PRIVATE_KEY: ""
       SIGNER_EXTERNAL_URL: ""
