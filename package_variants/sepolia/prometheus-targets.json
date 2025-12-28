@@ -5,7 +5,16 @@
             "service": "juno"
         },
         "targets": [
-            "juno-sepolia.dappnode:9090"
+            "juno.juno-sepolia.dappnode:9090"
+        ]
+    },
+    {
+        "labels": {
+            "package": "juno-sepolia.dnp.dappnode.eth",
+            "service": "staking"
+        },
+        "targets": [
+            "staking.juno-sepolia.dappnode:9090"
         ]
     }
 ]
