@@ -1,6 +1,8 @@
 ARG UPSTREAM_VERSION
 FROM nethermind/juno:${UPSTREAM_VERSION}
 
+ARG NETWORK
+
 # Install required tools (wget + zstd) in one layer before cleaning up
 RUN apt-get update && \
     apt-get install -y --no-install-recommends wget zstd && \
@@ -13,4 +15,5 @@ RUN mkdir -p /var/lib/juno
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+ENV NETWORK=${NETWORK}
 ENTRYPOINT ["/entrypoint.sh"]
