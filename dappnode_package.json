@@ -1,41 +1,51 @@
 {
-  "name": "juno.dnp.dappnode.eth",
-  "version": "2.0.2",
-  "shortDescription": "StarkNet full node",
-  "description": "Nethermind Starknet Node Client Juno",
-  "type": "service",
+  "architectures": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "categories": [
+    "Developer tools",
+    "Blockchain"
+  ],
   "contributors": [
     "hcastc00 <hector@dappnode.io> (https://github.com/hcastc00)",
     "Artur Vargas <arturvargas9226@gmail.com> (https://github.com/ArturVargas)",
     "Louis Garoche <louis@garoche.me> (https://github.com/lgaroche)"
   ],
-  "categories": ["Developer tools", "Blockchain"],
-  "keywords": ["starknet", "starkware", "nethermind"],
-  "architectures": ["linux/amd64", "linux/arm64"],
-  "upstreamArg": "UPSTREAM_VERSION",
-  "upstreamVersion": "v0.16.2",
-  "upstreamRepo": "NethermindEth/juno",
+  "description": "Nethermind Starknet Node Client Juno",
+  "exposable": [
+    {
+      "description": "JSON RPC endpoint for StarkNet",
+      "name": "StarkNet RPC",
+      "port": 6060
+    },
+    {
+      "description": "WebSocket RPC endpoint for StarkNet",
+      "name": "StarkNet WebSocket",
+      "port": 6061
+    }
+  ],
+  "keywords": [
+    "starknet",
+    "starkware",
+    "nethermind"
+  ],
+  "license": "GPL-3.0",
   "links": {
-    "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
     "api": "http://juno.dappnode:6060/",
+    "homepage": "https://github.com/dappnode/DAppNodePackage-juno-generic#readme",
     "websocket": "ws://juno.dappnode:6061/"
   },
+  "name": "juno.dnp.dappnode.eth",
   "repository": {
     "type": "git",
     "url": "https://github.com/dappnode/DAppNodePackage-juno-generic"
   },
-  "license": "GPL-3.0",
-  "exposable": [
-    {
-      "name": "StarkNet RPC",
-      "description": "JSON RPC endpoint for StarkNet",
-      "port": 6060
-    },
-    {
-      "name": "StarkNet WebSocket",
-      "description": "WebSocket RPC endpoint for StarkNet",
-      "port": 6061
-    }
-  ]
+  "shortDescription": "StarkNet full node",
+  "type": "service",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "upstreamRepo": "NethermindEth/juno",
+  "upstreamVersion": "v0.16.8",
+  "version": "2.0.2"
 }
